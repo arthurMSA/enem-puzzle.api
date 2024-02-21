@@ -1,5 +1,5 @@
-from .routes import question
 from fastapi import FastAPI
+from application.API.routes import question
 from database.mongodb.settings import MongoSettings
 from database.mongodb.repository.questionRepository import QuestionRepository
 
