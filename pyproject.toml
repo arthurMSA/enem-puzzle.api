@@ -10,9 +10,10 @@ packages = [{include = "enem_puzzle"}]
 python = "^3.12"
 fastapi = "^0.109.2"
 uvicorn = {extras = ["standard"], version = "^0.27.1"}
-beanie = "^1.25.0"
 pylint = "^3.0.3"
 python-dotenv = "^1.0.1"
+pytest = "^8.0.1"
+beanie = "^1.25.0"
 
 
 [build-system]
