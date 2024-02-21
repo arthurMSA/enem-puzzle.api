@@ -1,0 +1,242 @@
+[
+    {
+        "prompt": "Quem pintou 'A Noite Estrelada'?",
+        "area": "Ciências Humanas",
+        "response": "a",
+        "options": {
+            "a": "Vincent Van Gogh",
+            "b": "Pablo Picasso",
+            "c": "Claude Monet",
+            "d": "Leonardo da Vinci"
+        },
+        "answers": []
+    },
+    {
+        "prompt": "Qual filósofo escreveu 'A República'?",
+        "area": "Ciências Humanas",
+        "response": "b",
+        "options": {
+            "a": "Aristóteles",
+            "b": "Platão",
+            "c": "Sócrates",
+            "d": "Kant"
+        },
+        "answers": []
+    },
+    {
+        "prompt": "O que estuda a antropologia?",
+        "area": "Ciências Humanas",
+        "response": "c",
+        "options": {
+            "a": "Os fenômenos físicos do universo",
+            "b": "As estruturas de poder político",
+            "c": "As culturas e sociedades humanas",
+            "d": "Os processos de produção econômica"
+        },
+        "answers": []
+    },
+    {
+        "prompt": "Qual é a principal obra de Maquiavel?",
+        "area": "Ciências Humanas",
+        "response": "b",
+        "options": {
+            "a": "Utopia",
+            "b": "O Príncipe",
+            "c": "A Cidade do Sol",
+            "d": "Leviatã"
+        },
+        "answers": []
+    },
+    {
+        "prompt": "O que define uma democracia?",
+        "area": "Ciências Humanas",
+        "response": "c",
+        "options": {
+            "a": "Governo de um",
+            "b": "Governo de poucos",
+            "c": "Governo de muitos",
+            "d": "Não há governo"
+        },
+        "answers": []
+    },
+    {
+        "prompt": "Qual é o símbolo químico para o ouro?",
+        "area": "Ciências da Natureza",
+        "response": "d",
+        "options": {
+          "a": "Ag",
+          "b": "Cu",
+          "c": "Fe",
+          "d": "Au"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "O que é a fotossíntese?",
+        "area": "Ciências da Natureza",
+        "response": "c",
+        "options": {
+          "a": "Um processo de respiração celular",
+          "b": "Uma forma de reprodução das plantas",
+          "c": "Processo de conversão da luz solar em energia química",
+          "d": "Um método de absorção de água pelas raízes"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "Qual vitamina é produzida pela pele humana quando exposta ao sol?",
+        "area": "Ciências da Natureza",
+        "response": "d",
+        "options": {
+          "a": "Vitamina A",
+          "b": "Vitamina B",
+          "c": "Vitamina C",
+          "d": "Vitamina D"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "O que é um ecossistema?",
+        "area": "Ciências da Natureza",
+        "response": "a",
+        "options": {
+          "a": "Um conjunto de comunidades que vivem em um determinado local e interagem entre si",
+          "b": "Uma coleção de rochas e minerais",
+          "c": "Um tipo de bioma caracterizado por altas temperaturas",
+          "d": "Uma classificação para diferentes tipos de clima"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "Como é produzido o oxigênio na fotossíntese?",
+        "area": "Ciências da Natureza",
+        "response": "a",
+        "options": {
+          "a": "Através da decomposição da água",
+          "b": "Pela absorção do CO2",
+          "c": "Pela quebra da glicose",
+          "d": "Pelo consumo de nutrientes do solo"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "Qual o sinônimo de 'rápido'?",
+        "area": "Linguagens",
+        "response": "a",
+        "options": {
+          "a": "Veloz",
+          "b": "Devagar",
+          "c": "Lento",
+          "d": "Manso"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "O que é uma metáfora?",
+        "area": "Linguagens",
+        "response": "b",
+        "options": {
+          "a": "Uma comparação explícita",
+          "b": "Uma comparação implícita",
+          "c": "Uma repetição de sons",
+          "d": "Uma atribuição de qualidades humanas a objetos"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "Quem é o autor de 'Dom Casmurro'?",
+        "area": "Linguagens",
+        "response": "a",
+        "options": {
+          "a": "Machado de Assis",
+          "b": "José de Alencar",
+          "c": "Graciliano Ramos",
+          "d": "Guimarães Rosa"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "O que define uma onomatopeia?",
+        "area": "Linguagens",
+        "response": "b",
+        "options": {
+          "a": "Uma figura de linguagem que expressa ideia de negação",
+          "b": "A imitação de um som natural por meio da palavra",
+          "c": "Uma comparação sem o uso da palavra 'como'",
+          "d": "A repetição de sons consonantais no início de palavras"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "Qual a função da linguagem predominante em um texto argumentativo?",
+        "area": "Linguagens",
+        "response": "b",
+        "options": {
+          "a": "Referencial",
+          "b": "Conativa",
+          "c": "Fática",
+          "d": "Poética"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "Quanto é 2 + 2?",
+        "area": "Matemática",
+        "response": "c",
+        "options": {
+          "a": "3",
+          "b": "5",
+          "c": "4",
+          "d": "6"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "O que é uma equação do segundo grau?",
+        "area": "Matemática",
+        "response": "c",
+        "options": {
+          "a": "ax + b = 0",
+          "b": "ax^3 + bx^2 + cx + d = 0",
+          "c": "ax^2 + bx + c = 0",
+          "d": "Uma equação que pode ser escrita na forma ax^2 + bx + c = 0"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "Qual é a fórmula da área de um círculo?",
+        "area": "Matemática",
+        "response": "c",
+        "options": {
+          "a": "πr",
+          "b": "2πr",
+          "c": "πr^2",
+          "d": "πd"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "O que é uma tangente?",
+        "area": "Matemática",
+        "response": "b",
+        "options": {
+          "a": "Uma linha que passa por dois pontos de uma circunferência",
+          "b": "Uma linha que toca uma curva em exatamente um ponto",
+          "c": "Uma linha perpendicular a um raio em seu ponto final",
+          "d": "Uma linha que divide um ângulo em duas partes iguais"
+        },
+        "answers": []
+      },
+      {
+        "prompt": "Qual o valor de π (Pi)?",
+        "area": "Matemática",
+        "response": "a",
+        "options": {
+          "a": "3.14159",
+          "b": "2.71828",
+          "c": "1.61803",
+          "d": "1.73205"
+        },
+        "answers": []
+      }
+]
