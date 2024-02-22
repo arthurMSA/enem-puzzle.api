@@ -2,7 +2,8 @@ from abc import ABC, abstractmethod
 from typing import List, Dict
 from domain.entities.answer import Answer
 
-class QuestionRepositoryInterface(ABC):
+class AnswerRepositoryInterface(ABC):
     @abstractmethod
-    async def listQuestions() -> List[Dict]:
+    def answerQuestion(answer: Answer) -> None:
         raise NotImplementedError
+

@@ -1,19 +1,19 @@
 import uvicorn
 from fastapi import FastAPI
-from API.routes import question
-from database.mongodb.settings import MongoSettings
+from API.routes import questions, answer
 from contextlib import asynccontextmanager
+from data.enemDB.settings import enemDBConnection, getQuestionsCollection, enemDBDisconnect
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    print('API RUNNING')
-    await MongoSettings().connection()
+    enemDBConnection()
     yield
-    print('API STOPPING')
+    enemDBDisconnect()
 
 app = FastAPI(lifespan=lifespan)
 
-app.include_router(question.router)
+app.include_router(questions.router)
+app.include_router(answer.router)
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8080)
