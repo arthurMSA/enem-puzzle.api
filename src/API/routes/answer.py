@@ -1,16 +1,17 @@
 from fastapi import APIRouter
+from domain.entities.answer import Answer
+from data.enemDB.settings import getQuestionsCollection
+from bson.objectid import ObjectId
 
 router = APIRouter(
     prefix='/answer',
     tags=['question']
 )
 
-@router.get('/')
-async def listQuestions():
-    pass
-    # questions = QuestionRepository.listQuestions()
-    # return questions
-
-        #     question = EnemDB().connection()
-        # questionRes = question.find().limit(10)
-        # return json.loads(json_util.dumps(questionRes))
+@router.post('/')
+async def answerQuestion(answerPayload: Answer):
+    db = getQuestionsCollection()
+    question = db.find_one({ '_id': ObjectId(answerPayload.questionId) })
+    if answerPayload.answer.lower() == str(question['resposta']).lower():
+        return { 'correctAnswer': question['resposta'], 'points': { 'gain': 10, 'loss': 0 } }
+    return{ 'correctAnswer': question['resposta'], 'points': { 'gain': 0, 'loss': 5 } }

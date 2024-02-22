@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "enem-puzzle-api"
+name = "enem-quiz-api"
 version = "0.1.0"
 description = ""
 authors = ["arthurMSA <arthurmarcelosantanaalves@hotmail.com>"]

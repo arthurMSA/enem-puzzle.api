@@ -1,8 +1,8 @@
+import os
 from pymongo import MongoClient, errors
 from pymongo.database import Database
 from dotenv import load_dotenv
 from fastapi import HTTPException
-import os
 
 load_dotenv()
 
