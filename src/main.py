@@ -1,14 +1,17 @@
-from fastapi import FastAPI
-from application.API.routes import question
-from database.mongodb.settings import MongoSettings
-from database.mongodb.repository.questionRepository import QuestionRepository
 import uvicorn
+from fastapi import FastAPI
+from API.routes import question
+from database.mongodb.settings import MongoSettings
+from contextlib import asynccontextmanager
 
-app = FastAPI()
-
-@app.on_event('startup')
-async def run():
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    print('API RUNNING')
     await MongoSettings().connection()
+    yield
+    print('API STOPPING')
+
+app = FastAPI(lifespan=lifespan)
 
 app.include_router(question.router)
 
