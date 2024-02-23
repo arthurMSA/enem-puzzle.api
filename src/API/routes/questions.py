@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from database.enemDB.settings import getQuestionsCollection
 from utils.parseMongoDocument import parseDocumentToJson
-from domain.entities.area import Area
+from . .schemas.question import AreaParam
 
 router = APIRouter(
     prefix='/questions',
@@ -9,7 +9,7 @@ router = APIRouter(
 )
 
 @router.get('/{area}')
-async def listQuestions(area: Area):
+async def listQuestions(area: AreaParam):
     db = getQuestionsCollection()
     question = db.aggregate([
         { '$match': { 'disciplina': area.value } },

@@ -1,6 +1,6 @@
 from enum import Enum
 
-class Area(Enum):
+class AreaParam(Enum):
     BIOLOGY = 'biologia'
     PORTUGUESE = 'português'
     LITERATURE = 'literatura'
