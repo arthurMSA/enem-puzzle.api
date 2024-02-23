@@ -1,13 +1,9 @@
 import uvicorn
-import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from API.routes import questions, answer
 from contextlib import asynccontextmanager
 from database.enemDB.settings import enemDBConnection, enemDBDisconnect
-from dotenv import load_dotenv
-
-load_dotenv()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):

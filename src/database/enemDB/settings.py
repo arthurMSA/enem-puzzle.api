@@ -16,7 +16,7 @@ def enemDBConnection():
     global client, database
 
     MONGO_URL = os.environ.get('ENEM_DATA_BASE_URI')
-    DATABASE_NAME = "ENEM_crawler"
+    DATABASE_NAME = 'ENEM_crawler'
     
     try:
         client = MongoClient(MONGO_URL, serverSelectionTimeoutMS=5000)
@@ -30,22 +30,3 @@ def enemDBDisconnect():
 
     client.close()
     database = None
-
-# class EnemDBSettings():
-#     client: MongoClient
-
-#     def openConnection(self):
-#         self.client = MongoClient(os.environ.get('ENEM_DATA_BASE_URI'))
-
-#     def closeConnection(self):
-#         self.client.close()
-
-#     def getDB(self) -> MongoClient:
-#         db = self.client['ENEM_crawler']
-#         collection = db['enem_questions']
-#         return collection
-
-#         # db = client['ENEM_crawler']
-#         # collection = db['enem_questions']
-#         # return collection
-
