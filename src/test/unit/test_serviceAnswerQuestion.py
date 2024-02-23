@@ -60,7 +60,7 @@ def testValidateCorrectAnswer(mockQuestionRepository):
     repository = QuestionRepository(database=mockQuestionRepository)
     service = AnswerService(repository)
     answerOption = 'a'
-    result = service.validateAnswer({'questionId': '6512e2b5fd7b465b0251689c','answer': answerOption})
+    result = service.validateAnswer('6512e2b5fd7b465b0251689c', answerOption)
 
     assert result['points']['gain'] == 10
     assert result['points']['loss'] == 0
@@ -70,7 +70,7 @@ def testValidateWrongAnswer(mockQuestionRepository):
     repository = QuestionRepository(database=mockQuestionRepository)
     service = AnswerService(repository)
     answerOption = 'b'
-    result = service.validateAnswer({'questionId': '6512e2b5fd7b465b0251689c','answer': answerOption})
+    result = service.validateAnswer('6512e2b5fd7b465b0251689c', answerOption)
 
     assert result['points']['gain'] == 0
     assert result['points']['loss'] == 5

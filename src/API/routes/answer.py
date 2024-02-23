@@ -13,4 +13,4 @@ router = APIRouter(
 async def answerQuestion(answer: AnswerQuestionPayload) -> AnswerQuestionResponse:
     repository = QuestionRepository(getQuestionsCollection())
     service = AnswerService(repository)
-    return service.validateAnswer(answer)
+    return service.validateAnswer(answer.questionId, answer.answer)
