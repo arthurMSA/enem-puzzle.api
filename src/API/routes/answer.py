@@ -1,6 +1,8 @@
 from fastapi import APIRouter
 from . .schemas.answer import AnswerQuestionPayload, AnswerQuestionResponse
 from services.answer import AnswerService
+from database.enemDB.settings import getQuestionsCollection
+from database.enemDB.repository.question import QuestionRepository
 
 router = APIRouter(
     prefix='/answer',
@@ -9,5 +11,6 @@ router = APIRouter(
 
 @router.post('/')
 async def answerQuestion(answer: AnswerQuestionPayload) -> AnswerQuestionResponse:
-    service = AnswerService()
+    repository = QuestionRepository(getQuestionsCollection())
+    service = AnswerService(repository)
     return service.validateAnswer(answer)

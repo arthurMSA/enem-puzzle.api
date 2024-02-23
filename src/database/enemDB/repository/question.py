@@ -7,6 +7,7 @@ class QuestionRepository:
         self.db = database
 
     def listByArea(self, area: str):
+        print(area)
         return self.db.aggregate([
         { '$match': { 'disciplina': area } },
         { '$sample': { 'size': 3 } },
@@ -14,4 +15,6 @@ class QuestionRepository:
     ])
 
     def findById(self, id: str):
+        if not ObjectId.is_valid(id):
+            raise ValueError('invalid ObjectId')
         return self.db.find_one({ '_id': ObjectId(id) })
