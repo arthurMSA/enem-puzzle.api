@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from domain.entities.answer import Answer
-from data.enemDB.settings import getQuestionsCollection
+from database.enemDB.settings import getQuestionsCollection
 from bson.objectid import ObjectId
 
 router = APIRouter(

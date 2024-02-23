@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from data.enemDB.settings import getQuestionsCollection
+from database.enemDB.settings import getQuestionsCollection
 from utils.parseMongoDocument import parseDocumentToJson
 from domain.entities.area import Area
 
