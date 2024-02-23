@@ -2,7 +2,7 @@ import uvicorn
 import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from API.routes import questions, answer
+# from API.routes import questions, answer
 from contextlib import asynccontextmanager
 from data.enemDB.settings import enemDBConnection, enemDBDisconnect
 from dotenv import load_dotenv
@@ -29,8 +29,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(questions.router)
-app.include_router(answer.router)
+# app.include_router(questions.router)
+# app.include_router(answer.router)
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8080)
