@@ -9,7 +9,7 @@ class QuestionRepository:
     def listByArea(self, area: str):
         return self.db.aggregate([
         { '$match': { 'disciplina': area } },
-        { '$sample': { 'size': 5 } },
+        { '$sample': { 'size': 3 } },
         {'$project': { 'resposta': 0 } },
     ])
 
